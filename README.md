@@ -187,6 +187,7 @@ fact_sales.write.format("delta") \
 7. notebooks/gold/1_full_load_fact.ipynb  
 8. notebooks/gold/2_incremental_load_fact.ipynb  
 
+---
 
 ## ⚡ Performance Optimization
 
