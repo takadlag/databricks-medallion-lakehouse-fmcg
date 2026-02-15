@@ -88,26 +88,30 @@ Key capabilities demonstrated:
 ## 📂 Repository Structure
 
 ```
-project/
+databricks-medallion-lakehouse-fmcg/
 │
-├── src/
-│   ├── bronze.py
-│   ├── silver.py
-│   ├── gold.py
-│
-├── config/
-│   └── config.yaml
-│
-├── tests/
-│   └── test_silver.py
+├── notebooks/
+│   ├── setup/
+│   │   ├── setup_catalog.ipynb
+│   │   └── utilities.ipynb
+│   │
+│   ├── silver/
+│   │   ├── 1_customers_data_processing.ipynb
+│   │   ├── 2_products_data_processing.ipynb
+│   │   └── 3_pricing_data_processing.ipynb
+│   │
+│   ├── gold/
+│   │   ├── dim_date_table_creation.ipynb
+│   │   ├── 1_full_load_fact.ipynb
+│   │   └── 2_incremental_load_fact.ipynb
 │
 ├── docs/
 │   ├── Architecture.png
 │   └── Dashboard.png
 │
-├── requirements.txt
 ├── README.md
-└── .github/workflows/ci.yml
+└── requirements.txt
+
 ```
 
 ---
