@@ -1,3 +1,17 @@
+## Table of Contents
+
+1. [Executive Summary](#executive-summary)
+2. [Architecture Overview](#architecture-overview)
+3. [Tech Stack](#tech-stack)
+4. [Repository Structure](#repository-structure)
+5. [Dashboard Output](#dashboard-output)
+6. [Data Flow](#data-flow)
+7. [Performance Optimization](#performance-optimization)
+8. [Data Quality Checks](#data-quality-checks)
+9. [How to Run](#how-to-run)
+10. [Future Improvements](#future-improvements)
+11. [Author](#author)
+
 # 🏗️ Medallion Architecture Data Pipeline (FMCG Project) – Databricks Lakehouse
 
 An end-to-end **production-style Data Engineering project** implementing the Medallion Architecture (Bronze → Silver → Gold) using **Databricks, PySpark, Delta Lake, and AWS S3**.
