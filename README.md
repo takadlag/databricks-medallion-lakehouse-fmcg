@@ -8,6 +8,8 @@ This project demonstrates scalable distributed processing, transactional data la
 
 ---
 
+---
+
 ## 📚 Table of Contents
 
 - [📌 Executive Summary](#-executive-summary)
@@ -19,6 +21,7 @@ This project demonstrates scalable distributed processing, transactional data la
 - [📂 Repository Structure](#-repository-structure)
 - [📊 Dashboard Output](#-dashboard-output)
 - [🔄 Data Flow](#-data-flow)
+- [🗂️ Notebook Execution Order](#-notebook-execution-order)
 - [⚡ Performance Optimization](#-performance-optimization)
 - [🧪 Data Quality Checks](#-data-quality-checks)
 - [🚀 How to Run](#-how-to-run)
@@ -27,7 +30,6 @@ This project demonstrates scalable distributed processing, transactional data la
 - [👨‍💻 Author](#-author)
 
 ---
-
 
 ## 📌 Executive Summary
 
@@ -173,6 +175,18 @@ fact_sales.write.format("delta") \
 ```
 
 ---
+
+## 🗂️ Notebook Execution Order
+
+1. notebooks/setup/setup_catalog.ipynb  
+2. notebooks/setup/utilities.ipynb  
+3. notebooks/silver/1_customers_data_processing.ipynb  
+4. notebooks/silver/2_products_data_processing.ipynb  
+5. notebooks/silver/3_pricing_data_processing.ipynb  
+6. notebooks/gold/dim_date_table_creation.ipynb  
+7. notebooks/gold/1_full_load_fact.ipynb  
+8. notebooks/gold/2_incremental_load_fact.ipynb  
+
 
 ## ⚡ Performance Optimization
 
